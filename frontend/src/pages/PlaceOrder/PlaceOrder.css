@@ -1,0 +1,109 @@
+.place-order {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 34px;
+    margin: 100px 0;
+}
+
+.place-order-left {
+    width: 100%;
+    max-width: max(30%, 500px);
+    padding: 32px;
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid rgba(255, 76, 36, 0.1);
+    border-radius: 30px;
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+}
+
+.place-order-left .title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #101828;
+    margin-bottom: 28px;
+    letter-spacing: -0.03em;
+}
+
+.place-order-left input {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #E4E7EC;
+    border-radius: 16px;
+    outline-color: tomato;
+    background: #fcfcfd;
+}
+
+.place-order-left .multi-field {
+    display: flex;
+    gap: 10px;
+}
+
+.place-order-right {
+    width: 100%;
+    max-width: max(40%, 500px);
+}
+
+.place-order-submit {
+    margin-top: 34px;
+    border: none;
+    background: linear-gradient(135deg, tomato, #ff7a59);
+    color: white;
+    padding: 14px 30px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 16px 32px rgba(255, 76, 36, 0.24);
+}
+
+.payment {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    padding: 28px;
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid rgba(255, 76, 36, 0.1);
+    border-radius: 28px;
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+}
+
+.payment h2 {
+    margin: 0 0 6px;
+    color: #101828;
+}
+
+.payment .payment-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    border: 1px solid rgba(255, 76, 36, 0.22);
+    padding: 16px;
+    border-radius: 18px;
+    min-width: 300px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #fffaf8;
+}
+
+.payment .payment-option:hover {
+    background-color: #ffe7de;
+}
+
+@media (max-width:700px) {
+    .place-order {
+        flex-direction: column;
+    }
+
+    .place-order-left,
+    .payment,
+    .cart-total {
+        padding: 22px;
+    }
+
+    .payment .payment-option {
+        min-width: 100%;
+    }
+}

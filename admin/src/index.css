@@ -1,0 +1,68 @@
+:root {
+  --accent: #FF4C24;
+  --accent-soft: #fff2ed;
+  --surface: rgba(255, 255, 255, 0.86);
+  --surface-muted: #fff8f5;
+  --border: rgba(255, 76, 36, 0.12);
+  --text-primary: #172033;
+  --text-secondary: #667085;
+  --shadow-lg: 0 24px 60px rgba(15, 23, 42, 0.12);
+  --shadow-md: 0 16px 36px rgba(15, 23, 42, 0.08);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(255, 76, 36, 0.12), transparent 25%),
+    linear-gradient(180deg, #fffdfb 0%, #fff6f1 100%);
+  color: var(--text-primary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: rgba(169, 169, 169, 0.22);
+}
+
+.app {
+  min-height: 100vh;
+  padding: 18px;
+}
+
+.app-content {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+@media (max-width:900px) {
+  .app {
+    padding: 14px;
+  }
+
+  .app-content {
+    gap: 14px;
+  }
+}

@@ -1,0 +1,81 @@
+:root {
+  --accent: #FF4C24;
+  --accent-dark: #d93d17;
+  --accent-soft: #fff1ec;
+  --surface: rgba(255, 255, 255, 0.88);
+  --surface-strong: #ffffff;
+  --surface-muted: #fff7f3;
+  --border: rgba(255, 76, 36, 0.12);
+  --text-primary: #1f2937;
+  --text-secondary: #667085;
+  --shadow-lg: 0 24px 60px rgba(17, 24, 39, 0.12);
+  --shadow-md: 0 16px 40px rgba(17, 24, 39, 0.08);
+  --radius-lg: 24px;
+  --radius-md: 18px;
+  --radius-sm: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(255, 76, 36, 0.12), transparent 30%),
+    radial-gradient(circle at top right, rgba(255, 176, 59, 0.12), transparent 28%),
+    linear-gradient(180deg, #fffdfb 0%, #fff6f1 100%);
+  color: var(--text-primary);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+}
+
+.app {
+  width: min(86%, 1280px);
+  margin: auto;
+}
+
+.Toastify__toast {
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width:1050px) {
+  .app {
+    width: 90%;
+  }
+}
